@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>project.</title>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  </head>
+  <body>
+
+<div class="nav">
+  <h1>population.</h1>
+  <div class="nav_options">
+    <a href="graph.html">graph.</a>
+  </div>
+</div>
+
+    <div id='map' style='width: 100%; height: 90vh;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYXBla3NvdWwiLCJhIjoiY2tsemxhdmwzM2R0azJ2bndzYTZsM29zZiJ9.dZPqe94hdHFpqWSHZC-GNQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/apeksoul/ckm4x7m9c1xoj17nw017n3mu1',
+    zoom: 1.5
+  });
+</script>
+<script src="sun.js"></script>
+  </body>
+</html>
